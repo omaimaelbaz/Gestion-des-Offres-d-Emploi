@@ -15,7 +15,7 @@ class login
 
     public function Login($email , $password){
         
-        // $passwordHash = MD5($password);
+        $passwordHash = MD5($password);
         $password = $_POST['password'];
         $SQL = "SELECT * FROM users WHERE email = '$email' AND `passwordHash` = '$password'";
         $result = $this->con->query($SQL);

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -108,7 +109,34 @@
                                     <div>
                                         <p class="mb-0">Offres</p>
                                         <div class="mt-4">
-                                            <h3><strong>18</strong></h3>
+                                            <h3><strong>
+                                            <?php
+                                            include("../conn.php");
+                                            $sql = "SELECT COUNT(*) as order_count FROM offres";
+                                               
+                                                // Execute the query
+                                                $result = $conn->query($sql);
+
+                                                // Check if the query was successful
+                                                if ($result) {
+                                                    // Fetch the result as an associative array
+                                                    $row = $result->fetch_assoc();
+
+                                                    // Access the count value
+                                                    $orderCount = $row['order_count'];
+
+                                                    // // Output the count on the front end
+                                                    echo "$orderCount";
+
+                                                    // Free the result set
+                                                    $result->free();
+                                                } else {
+                                                    // Handle query error
+                                                    // echo "Error " ;
+                                                }
+
+                                                ?>
+                                            </strong></h3>
                                             
                                         </div>
                                     </div>
@@ -127,7 +155,31 @@
                                     <div>
                                         <p class="mb-0">Active Offres</p>
                                         <div class="mt-4">
-                                            <h3><strong>132</strong></h3>
+                                            <h3><strong><?php
+                                            
+                                            $sql = "SELECT COUNT(*) as status_Count FROM offres where status = 'img/default.svg'";
+                                               
+                                                // Execute the query
+                                                $result = $conn->query($sql);
+
+                                                // Check if the query was successful
+                                                if ($result) {
+                                                    // Fetch the result as an associative array
+                                                    $row = $result->fetch_assoc();
+
+                                                    // Access the count value
+                                                    $statusCount = $row['status_Count'];
+
+                                                    // // Output the count on the front end
+                                                    echo "$statusCount";
+
+                                                    // Free the result set
+                                                    $result->free();
+                                                } else {
+                                                     echo "Error " ;
+                                                }
+
+                                                ?></strong></h3>
                                            
                                         </div>
                                     </div>
