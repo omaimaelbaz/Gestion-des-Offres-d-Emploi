@@ -1,8 +1,8 @@
 <?php
 include_once 'ofre.php';
 require_once 'conn.php' ;
-$offer = new Offre($conn);
-$result=$offer->getOffre();
+// $offer = new Offre($conn);
+// $result=$offer->getOffre();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -164,7 +164,7 @@ function search(e) {
     let company = inputs[2].value;
     const request = new XMLHttpRequest();// cree ajax request
     request.open('GET',`traitmentajax.php?name=${keyword}&location=${location}&company=${company}`);
-    request.send(); // send on traitmrnt php
+    request.send(); // send on traitment php
 
     request.onreadystatechange = function() {
         if (request.readyState === 4 && request.status === 200) 

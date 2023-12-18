@@ -20,8 +20,6 @@ if(isset($_POST['login']))
                 {
                   
                 header("location:dashboard/dashboard.php");
-              
-
 
                 }
               else if ($_SESSION["roleuserID"] == 2)
