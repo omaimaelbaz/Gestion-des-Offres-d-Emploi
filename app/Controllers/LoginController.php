@@ -13,5 +13,15 @@ class LoginController
        
 
     }
+    public function creat()
+    {
+        // // Fetch data from the "users" table
+    
+        if (isset($_POST['match'])) {
+            
+            dump($_POST['match']);
+        }
+
+    }
 }
 ?>

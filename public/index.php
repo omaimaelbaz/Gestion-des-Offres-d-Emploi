@@ -23,6 +23,10 @@ switch ($route) {
         $logincontroller = new LoginController();
         $logincontroller->login();
         break;
+    case 'creat':
+            $logincontroller = new LoginController();
+            $logincontroller->creat();
+            break;
     // Add more cases for other routes as needed
     default:
         // Handle 404 or redirect to the default route
