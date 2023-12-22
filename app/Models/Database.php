@@ -13,10 +13,10 @@ class Database
     {
         // Your database connection details
         
-        $dbHost = DB_HOST;
-        $dbUser = DB_USERNAME;
-        $dbPass = DB_PASSWORD;
-        $dbName = DB_NAME;
+        $dbHost = "localhost";
+        $dbUser = "root";
+        $dbPass = "";
+        $dbName = "jobs" ;
 
         // Create a database connection
         $this->mysqli = new mysqli($dbHost, $dbUser, $dbPass, $dbName);

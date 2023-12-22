@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'youcode/jobeasy_mvc',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => NULL,
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
+        'reference' => '9a973832d151b7e97d47007437ca186323f21881',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -38,9 +38,9 @@
             'dev_requirement' => true,
         ),
         'youcode/jobeasy_mvc' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => NULL,
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => '9a973832d151b7e97d47007437ca186323f21881',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
